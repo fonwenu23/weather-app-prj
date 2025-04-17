@@ -5,9 +5,10 @@ import os
 
 load_dotenv()
 
+
 def get_current_weather(city="Detroit"):
     
-    request_url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={os.getenv("API_KEY")}&units=imperial'
+    request_url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=f5c344aef27cad1a56eec11e09a33655&units=imperial'
 
     weather_data = requests.get(request_url).json()
 
